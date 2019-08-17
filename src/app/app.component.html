@@ -2,12 +2,12 @@
 
     Welcome to {{ title }}!
     <app-header></app-header>
-    <app-banner *ngIf="router.url=='/'"></app-banner>
+    <app-banner *ngIf="router.url == '/'"></app-banner>
 
    
-    <app-blogpost-featured></app-blogpost-featured>
+    <app-blogpost-featured *ngIf="router.url == '/'"></app-blogpost-featured>
     <router-outlet></router-outlet>
-    <app-footer *ngIf="router.url=='/'"></app-footer>
+    <app-footer ></app-footer>
 
 
 
